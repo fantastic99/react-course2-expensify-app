@@ -17,33 +17,33 @@ const store = configureStore();
 
 
   // const state = store.getState();
-const expenseOne=store.dispatch(addExpense(
-  {description:'water Bill',
-  note:'this was the final payment for that address',
-  amount:4500,
-  createdAt:-1
-}
-))
+// const expenseOne=store.dispatch(addExpense(
+//   {description:'water Bill',
+//   note:'this was the final payment for that address',
+//   amount:4500,
+//   createdAt:-1
+// }
+// ))
 
-const expenseTwo=store.dispatch(addExpense(
-  {description:'Gas bill',
-  note:'splurging today bc its my birthday',
-  amount:0,
-  createdAt:-2
-}))
-const expenseThree=store.dispatch(addExpense(
-  {description:'Rent',
-  note:'finale rent payment',
-  amount:109500,
-  createdAt:-3
-}))
+// const expenseTwo=store.dispatch(addExpense(
+//   {description:'Gas bill',
+//   note:'splurging today bc its my birthday',
+//   amount:0,
+//   createdAt:-2
+// }))
+// const expenseThree=store.dispatch(addExpense(
+//   {description:'Rent',
+//   note:'finale rent payment',
+//   amount:109500,
+//   createdAt:-3
+// }))
 
-store.subscribe(()=>{
-  const state = store.getState();
-  const visibleExpenses = selectExpenses(state.expenses, state.filters);
-  console.log(visibleExpenses)
+// store.subscribe(()=>{
+//   const state = store.getState();
+//   const visibleExpenses = selectExpenses(state.expenses, state.filters);
+//   console.log(visibleExpenses)
       
-  })
+//   })
 
 // // console.log(store.getState());
 // store.dispatch(setTextFilter({text:''}))
